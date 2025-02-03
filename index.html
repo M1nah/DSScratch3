@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=480 height=360 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1760 height=990 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,9 +57,9 @@
       var loaderUrl = buildUrl + "/DSScratch3.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/DSScratch3.data.br",
-        frameworkUrl: buildUrl + "/DSScratch3.framework.js.br",
-        codeUrl: buildUrl + "/DSScratch3.wasm.br",
+        dataUrl: buildUrl + "/DSScratch3.data",
+        frameworkUrl: buildUrl + "/DSScratch3.framework.js",
+        codeUrl: buildUrl + "/DSScratch3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ALUX-DroneSimulator",
@@ -100,8 +100,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "480px";
-        canvas.style.height = "360px";
+        canvas.style.width = "1760px";
+        canvas.style.height = "990px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
